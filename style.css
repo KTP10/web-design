@@ -1,0 +1,314 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: blanchedalmond;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    align-items: center;
+    z-index: 100;
+
+}
+#logo{
+    height: 45px;
+    max-width: 300px;
+    padding: 0.4rem;
+    background-color: blanchedalmond;
+}
+h1{
+    color:#1b1b32;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: min(5vh, 1.8em);
+    max-height: 60px;
+    
+}
+nav{
+    width: 50%;
+    height: 50px;
+    max-width: 300px;
+}
+nav > ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-inline-start: 0;
+    margin-block: 0;
+    align-items: center;
+    height: 100%;
+
+
+}
+nav > ul > li{
+    margin: 0 0.2em;
+    padding: 0.2em;
+    display: block;
+}
+.window-scroll{
+    background-color: white;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    h1{
+        color: #1b1b32;
+        border: none;
+    }
+    ul > li >a{
+        color: #1b1b32;
+    }
+    ul > li >a:hover{
+        color: white;
+    }
+    #logo{
+        background-color: white;
+    }
+}
+li a{
+    color: #1b1b32;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #1b1b32;
+    color:blanchedalmond;
+    cursor: pointer;
+    transition: 1s;
+}
+main{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("images/background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    position: relative;
+    margin-top: 60px;
+    padding-top: 20px;
+  
+}
+section{
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 800px;
+}
+.books-div{
+    padding: 20px 0;
+    color: blanchedalmond;
+    
+}
+.books-flyer{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-bottom: 2px solid blanchedalmond;
+    margin-bottom: 30px;
+}
+.introduction{
+    color: blanchedalmond;
+    text-align: justify;
+}
+.about{
+    color: blanchedalmond;
+    text-align: center;
+}
+.about-section{
+    margin-top: 70px;
+    width: 100%;
+    max-width: 1000px;
+}
+.about-section > div > p{
+    color: blanchedalmond;
+    text-align: justify;
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto 10px auto;
+    border-bottom: 2px solid blanchedalmond;
+}
+.books1-6{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+.books1-6 > a > img{
+    height: 350px;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 20px;
+}
+.article-section{
+    margin-top: 80px;
+    width: 100%;
+    max-width: 1000px;
+    padding-bottom: 60px;
+}
+.articles-container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+    gap: 1rem;
+}
+.article-left{
+    color: blanchedalmond;
+    margin-right: 3rem;
+}
+.article-right{
+    margin-left: 1rem;
+    color: blanchedalmond;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.btn{
+    background-color: blanchedalmond;
+    color: #1b1b32;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: #1b1b32;
+    color: blanchedalmond;
+    transition: 1s;
+}
+.article-content{
+    width: 150px;
+    background-color: blanchedalmond;
+    color: #1b1b32;
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+.article-icon{
+    color: blanchedalmond;
+    background-color: #1b1b32;
+    border-radius: 5px;
+}
+.article-content:hover{
+
+    border-color: blanchedalmond;
+    color: blanchedalmond;
+    background: transparent;
+    transition: 1s;
+    box-shadow: 0 2rem 2rem rgba(255,255,255,0.3);
+}
+.foot-content{
+    margin: 5px auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    max-width: 800px;
+    gap: 5rem;
+    padding: 10px 0;
+    align-items: center;
+}
+footer{
+    margin-top: -10px;
+    overflow: hidden;
+    background-color: blanchedalmond;
+}
+.text-question{
+    color: #1b1b32;
+}
+.text-answer > textarea{
+    background-color: #1b1b32;
+    color: blanchedalmond;
+}
+.submit{
+    background-color: #1b1b32;
+    color: blanchedalmond;
+    padding: 5px 10px;
+}
+div > address >a{
+    color: #1b1b32;
+}
+@media screen and (max-width: 1024px) {
+    
+    h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    h3{
+        font-size: 1.0rem;
+    }
+    h4{
+        font-size: 0.8rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+    .books1-6{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-left: 50px;
+    }
+    .article-section{
+        margin-left: 30px;
+    }
+
+    .article-right{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        column-gap: 0;  
+    }
+    .books1-6 > a > img{
+        height: 250px;
+        max-width: 250px;
+    }
+    .articles-container{
+        gap: 1rem;
+        grid-template-columns: 30% 70%;
+    }
+    .article-content{
+        width: 150px;
+        padding: 2px 10px;
+    }
+    a{
+        font-size: 0.8rem;
+    }
+    .foot-content{
+        width: 80vw;
+        gap: 3rem;
+    } 
+}
+@media screen and (max-width: 650px) {
+    .articles-container{
+        grid-template-columns: 1fr;
+        margin-top: -30px
+        
+    }
+    .foot-content{
+        grid-template-columns: 1fr;
+
+    }
+    .article-right{
+        padding-top: 30px;
+    }
+    .books1-6 > a > img{
+        height: 200px;
+        max-width: 150px;
+        width: 100%;
+    }
+    #employees{
+        text-align: center;
+    }
+    .address{
+        text-align: center;
+    }
+    .form{
+        margin: 0 auto;
+    }
+    .article-content{
+        width: 120px;
+        padding: 2px 10px;
+    }
+  
+}
